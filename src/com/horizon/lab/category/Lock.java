@@ -66,6 +66,8 @@ public class Lock extends SettingsPreferenceFragment
 
         Settings.System.putIntForUser(resolver,
                  Settings.System.LOCKSCREEN_ENABLE_POWER_MENU, 1, UserHandle.USER_CURRENT);
+        Settings.System.putIntForUser(resolver,
+                Settings.System.LOCKSCREEN_SHOW_CARRIER, 1, UserHandle.USER_CURRENT);
     }
 
     @Override
