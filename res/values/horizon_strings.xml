@@ -79,7 +79,7 @@
     <string name="qs_footer_datausage_title">Data usage</string>
     <string name="qs_footer_datausage_summary">Display data usage summary in quick settings footer</string>
 
-     <!-- Unlimited Photos storage -->
+    <!-- Unlimited Photos storage -->
     <string name="photos_spoof_title">Unlimited Photos storage</string>
     <string name="photos_spoof_summary">Spoof your device as Pixel XL for the Google Photos app only to provide unlimited storage for backup</string>
 
@@ -133,4 +133,8 @@
     <!-- Notification guts kill app button -->
     <string name="notification_guts_kill_app_button_title">Force stop button</string>
     <string name="notification_guts_kill_app_button_summary">Show force stop button in the notification\'s longpress menu</string>
+
+    <!-- Heads Up Options -->
+    <string name="less_boring_heads_up_title">Less boring heads up</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer, messaging and alarm app</string>
 </resources> 
