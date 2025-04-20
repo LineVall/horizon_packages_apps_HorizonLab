@@ -8,6 +8,17 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/category_misc_title" >
 
+    <!-- GameSpace -->
+     <Preference
+         android:key="game_space"
+         android:title="@string/game_space_title"
+         android:summary="@string/game_space_summary">
+         <intent
+             android:action="android.intent.action.MAIN"
+             android:targetPackage="io.chaldeaprjkt.gamespace"
+             android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
+     </Preference>
+
     <com.android.settings.custom.preference.GlobalSettingSwitchPreference
         android:key="pm_downgrade_allowed"
         android:title="@string/app_downgrade_title"
