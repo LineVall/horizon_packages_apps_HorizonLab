@@ -28,7 +28,7 @@
     <string name="category_lock_title">LockScreen</string>
     <string name="category_notif_title">Notifications</string>
 
-<!-- About HorizonDroid -->
+    <!-- About HorizonDroid -->
     <string name="hz_about_title">About HorizonDroid</string>
     <string name="hz_about_summary">Everything about us.</string>
     <string name="hz_about_link">Visit and join</string>
@@ -100,4 +100,11 @@
     <!-- Navigation Bar -->
     <string name="navigation_bar_enable_taskbar_title">Enable taskbar</string>
 
+    <!-- Button settings -->
+    <string name="button_pref_title">Buttons</string>
+    <string name="button_pref_title_summary">Buttons customization changes</string>
+
+    <!-- Gesture -->
+    <string name="gesture_preference_title">Gestures</string>
+    <string name="gesture_preference_title_summary">Gesture customization settings</string>
 </resources> 
