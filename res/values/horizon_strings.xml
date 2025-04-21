@@ -27,6 +27,7 @@
     <string name="category_theme_title">Themes</string>
     <string name="category_lock_title">LockScreen</string>
     <string name="category_notif_title">Notifications</string>
+    <string name="other">Others</string>
 
     <!-- About HorizonDroid -->
     <string name="hz_about_title">About HorizonDroid</string>
@@ -107,4 +108,8 @@
     <!-- Gesture -->
     <string name="gesture_preference_title">Gestures</string>
     <string name="gesture_preference_title_summary">Gesture customization settings</string>
+
+    <!-- Status bar - icons -->
+    <string name="status_bar_title">Status Bar Custom</string>
+    <string name="status_bar_title_summary">Customise LineageParts</string>
 </resources> 
