@@ -59,7 +59,14 @@ public class Lock extends SettingsPreferenceFragment
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         return false;
-    }  
+    }
+
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+
+        Settings.System.putIntForUser(resolver,
+                 Settings.System.LOCKSCREEN_ENABLE_POWER_MENU, 1, UserHandle.USER_CURRENT);
+    }
 
     @Override
     public int getMetricsCategory() {
