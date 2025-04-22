@@ -73,7 +73,12 @@ public class Statusbar extends SettingsPreferenceFragment  {
 
         Settings.System.putIntForUser(resolver,
                 Settings.System.WIFI_STANDARD_ICON, 0, UserHandle.USER_CURRENT);
+        Settings.Secure.putIntForUser(resolver,
+                 Settings.Secure.ENABLE_CAMERA_PRIVACY_INDICATOR, 1, UserHandle.USER_CURRENT);
+        Settings.Secure.putIntForUser(resolver,
+                 Settings.Secure.ENABLE_LOCATION_PRIVACY_INDICATOR, 1, UserHandle.USER_CURRENT);
     }
+
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.HORIZON;
