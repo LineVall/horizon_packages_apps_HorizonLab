@@ -19,4 +19,8 @@
         android:summary="show hide brightness percentage text"
         android:defaultValue="false" />
 
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+        android:key="secure_lockscreen_qs_disabled"
+        android:title="@string/disable_qs_title"
+        android:summary="@string/disable_qs_summary"/>
 </PreferenceScreen>
