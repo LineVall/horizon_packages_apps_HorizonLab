@@ -54,4 +54,10 @@
         android:summary="@string/charging_animation_summary"
         android:defaultValue="true" />
 
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+        android:key="lockscreen_show_carrier"
+        android:title="@string/lockscreen_show_carrier_title"
+        android:summary="@string/lockscreen_show_carrier_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>

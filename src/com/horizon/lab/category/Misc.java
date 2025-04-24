@@ -39,6 +39,8 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.Indexable;
 import com.android.settingslib.search.SearchIndexable;
 
+import lineageos.providers.LineageSettings;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -59,12 +61,19 @@ public class Misc extends SettingsPreferenceFragment
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         return false;
-    }  
+    }
+
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+        Settings.System.putIntForUser(resolver,
+                 Settings.System.LOCKSCREEN_SHOW_CARRIER, 1, UserHandle.USER_CURRENT);
+    }
 
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.HORIZON;
     }
+
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider() {
                 @Override
